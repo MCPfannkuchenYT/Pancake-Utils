@@ -4,7 +4,7 @@ package de.pancakeutils;
  * All Object-Reference based Utils
  * @author Pancake
  */
-public class Objects {
+public final class Objects {
 
 	/**
 	 * Checks whether a given array of Objects is null
@@ -14,6 +14,7 @@ public class Objects {
 	 */
 	@SafeVarargs
 	public static final <T> boolean isNullCheck(final T... obj) {
+		if (obj == null) return true;
 		for (int i = 0; i < obj.length; i++) {
 			if (obj[i] == null) return true;
 		}
