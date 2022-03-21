@@ -4,7 +4,7 @@ public class TestDialog {
 
 	public static void main(String[] args) {
 		/* TEST Dialog.enableSystemStyle */
-		System.out.print("Dialog Objects.enableSystemStyle");
+		System.out.print("Checking Dialog.enableSystemStyle");
 		try {
 			Dialog.enableSystemStyle();
 			System.out.println(" - Check passed, successfully changed to system style");
@@ -18,7 +18,7 @@ public class TestDialog {
 			}
 		}
 		/* TEST Dialog.askForUserInput */
-		System.out.print("Dialog Objects.askForUserInput");
+		System.out.print("Checking Dialog.askForUserInput");
 		try {
 			Dialog.askForUserInput(null, null);
 			System.out.println(" - Check failed");
